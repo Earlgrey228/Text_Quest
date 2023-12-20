@@ -1,3 +1,8 @@
+package player;
+
+import rooms.*;
+import items.*;
+
 public class Player{
 	
 	private int hp;

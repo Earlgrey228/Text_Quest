@@ -1,3 +1,5 @@
+package items;
+
 public class Map{
 	
 	private String floor;
