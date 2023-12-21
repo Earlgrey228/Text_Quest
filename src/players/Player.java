@@ -5,18 +5,15 @@ import items.*;
 
 public class Player{
 	
-	private int hp;
-	private int exp;
+	private int hp = 50;
+	private int exp = 0;
 	private String name;
-	private Item [] inventory;
+	private Item [] inventory = new Item[10];
 	private AbstractRoom room;
-	private String floor;
-	private boolean secretRoomIsOpen = false;
+	private int floor;
 	
-	public Player(String name, int hp, int exp){
+	public Player(String name){
 		this.name = name;
-		this.hp = hp;
-		this.exp = exp;
 	}
 	
 	public int getHp(){
@@ -51,16 +48,8 @@ public class Player{
 		this.room = room;
 	}
 	
-	public void setFloor(String floor){
+	public void setFloor(int floor){
 		this.floor = floor;
-	}
-	
-	public boolean getSecretRoom(){
-		return secretRoomIsOpen;
-	}
-	
-	public void setSecretRoom(boolean secretRoomIsOpen){
-		this.secretRoomIsOpen = secretRoomIsOpen;
 	}
 	
 }
