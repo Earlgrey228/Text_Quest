@@ -11,6 +11,7 @@ public class Player{
 	private Item [] inventory;
 	private AbstractRoom room;
 	private String floor;
+	private boolean secretRoomIsOpen = false;
 	
 	public Player(String name, int hp, int exp){
 		this.name = name;
@@ -53,4 +54,13 @@ public class Player{
 	public void setFloor(String floor){
 		this.floor = floor;
 	}
+	
+	public boolean getSecretRoom(){
+		return secretRoomIsOpen;
+	}
+	
+	public void setSecretRoom(boolean secretRoomIsOpen){
+		this.secretRoomIsOpen = secretRoomIsOpen;
+	}
+	
 }
