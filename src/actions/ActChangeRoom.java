@@ -2,11 +2,11 @@ package actions;
 
 import rooms.*;
 
-public class ActionChangeRoom extends AbstractAction{
+public class ActChangeRoom extends AbstractAct{
 	
 	private AbstractRoom room;
 	
-	public ActionChangeRoom(String name, String description, AbstractRoom room) {
+	public ActChangeRoom(String name, String description, AbstractRoom room) {
 		super(name, description);
 		this.room = room;
 	}
