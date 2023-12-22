@@ -5,30 +5,31 @@ import items.*;
 
 public class Player{
 	
-	private int hp = 50;
-	private int exp = 0;
 	private String name;
-	private Item [] inventory = new Item[10];
+	private Item [] inventory;
 	private AbstractRoom room;
 	private int floor;
 	
-	public Player(String name){
-		this.name = name;
+	public Player(AbstractRoom room) {
+		hp = 50;
+		exp = 0;
+		inventory = new Item[10];
+		this.room = room
 	}
 	
 	public int getHp(){
 		return hp;
 	}
 	
-	public void setHp(int hp){
-		this.hp = hp;
+	public void addHp(int hp){
+		this.hp += hp;
 	}
 	
 	public int getExp(){
 		return exp;
 	}
 	
-	public void setExp(int hp){
+	public void addExp(int hp){
 		this.hp += hp;
 	}
 	

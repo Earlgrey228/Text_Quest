@@ -15,7 +15,7 @@ public class Item{
 	}
 	
 	public void readDecription(){
-		System.out.println(descriptoin);
+		System.out.println(description);
 	}
 	
 }
