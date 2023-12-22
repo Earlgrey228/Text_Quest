@@ -14,7 +14,7 @@ public class Player{
 		hp = 50;
 		exp = 0;
 		inventory = new Item[10];
-		this.room = room
+		this.room = room;
 	}
 	
 	public int getHp(){
@@ -27,6 +27,10 @@ public class Player{
 	
 	public int getExp(){
 		return exp;
+	}
+	
+	public AbstractRoom getRoom() {
+		return room;
 	}
 	
 	public void addExp(int hp){

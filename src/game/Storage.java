@@ -1,7 +1,7 @@
-package storage;
+package game;
 
 import players.*;
-import rooms.*;
+import game.*;
 
 public class Storage {
 	
@@ -9,8 +9,8 @@ public class Storage {
 	private Start s;
 	
 	public Storage() {
+		p = new Player();
 		s = new Start("Начало игры");
-		p = new Player(s);
 	}
 	
 	public Player getPlayer() {
