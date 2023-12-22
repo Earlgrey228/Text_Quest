@@ -1,11 +1,11 @@
 package actions;
 
-public class AbstractAct {
+public abstract class AbstractAct {
 	
 	private String name;
 	private String description; //описание, нужно ли?
 	
-	public AbstractAct(String name; String description) {
+	public AbstractAct(String name, String description) {
 		this.name = name;
 		this.description = description; //?
 	}
@@ -15,9 +15,9 @@ public class AbstractAct {
 	}
 	
 	public String getDescription() {
-		return description
+		return description;
 	} //?
 	
-	public void act();
+	public abstract void act();
 	
 }
