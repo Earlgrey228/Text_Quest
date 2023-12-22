@@ -1,20 +1,23 @@
 package game;
 
+import players.*;
+
 public class Game {
 	
-	Scanner sc = new Scanner(System.in);
+	private Storage db;
 	
-	public void start() {
+	public Game() {
+		db = new Storage();
 	}
 	
 	public void gameProcess() {
-		while(p.active & p.alive) {
-			Room r = p.getRoom();
+		Player p = db.getPlayer();
+		while(p.active & p.alive) { // todo: pеализовать в плэере эти методы
+			AbstractRoom r = p.getRoom();
 			r.play();
 			r.printActions();
 			r.actionChoise(sc.nextInt());
 		}
 	}
 	
-	public void end() {}
 }

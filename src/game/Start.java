@@ -13,10 +13,10 @@ public class Start extends AbstractRoom{
 		this.initActions();
 	}
 	
-	public void initActions() {
+	public void initActions(Storage db) {
 		actions = new AbstractAct[2];
 		actions[1] = ActExit("Нет, я трусливо ухожу", "Очень жаль, о, странник! Что ж, в таком случае, прощай!");
-		actions[0] = ActChangeRoom("Да! Начинаем игру!", "Я очень рад! Что ж, отправляемся скорей!", db.getOutsideRoom); // момент с бд нужно исправить
+		actions[0] = ActChangeRoom("Да! Начинаем игру!", "Я очень рад! Что ж, отправляемся скорей!", db.getPreIntermidia1301); // момент с бд нужно исправить
 	}
 	
 	public void play(Player p) {
